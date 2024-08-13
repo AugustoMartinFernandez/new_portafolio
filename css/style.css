@@ -1,0 +1,536 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-body-tertiary {
+  background-color: rgba(0, 0, 0, 0.785) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-text {
+  color: white;
+}
+
+.navbar-brand {
+  color: #d2d225;
+  font-weight: 800;
+}
+
+.navbar-brand:hover {
+  color: #d2d225 !important;
+  filter: brightness(150%) saturate(200%);
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios-filled/50/FFFFFF/menu--v6.png");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #c7c70c;
+  font-size: 2.3rem;
+}
+
+h1:hover {
+  color: rgb(98, 98, 24) !important;
+  filter: brightness(180%) saturate(250%);
+}
+
+p {
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+  padding: 50px 0;
+  background-color: #1c1c1c;
+}
+
+.sobre-mi-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.sobre-mi-text {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobre-mi-text h2 {
+  font-size: 2.5rem;
+  color: #c7c70c;
+  margin-bottom: 20px;
+}
+
+.sobre-mi-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sobre-mi-text .btn-simple {
+  margin-top: 20px;
+}
+
+.sobre-mi-image {
+  flex: 1;
+  max-width: 550px;
+}
+
+.sobre-mi-image img {
+  width: 100%;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+}
+
+.servicios-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.servicios-h1 {
+  min-height: 280px;
+}
+
+.div-servicios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-servicios img {
+  display: flex;
+  max-width: 320px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 2px 3px grey);
+  /* Sombra suave y difusa */
+  filter: contrast(120%);
+  -webkit-filter: contrast(120%);
+}
+
+.div-servicios img:hover {
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.25));
+  /* Sombra más intensa al pasar el mouse */
+}
+
+.texto-servicios {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+/*ESTILOS PARA LA SECCION DE MIS SERVICIOS */
+
+/* Contenedor de la sección de servicios */
+.servicios {
+  padding: 50px 0;
+  background-color: #1c1c1c;
+}
+
+#tecnologias {
+  background: linear-gradient(to right, #090a0c, #29323c);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título de la sección */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #b7b717;
+}
+
+
+/* Estilos del grid de servicios */
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Estilos de cada servicio */
+.servicio-item {
+  flex: 1 1 calc(25% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+  transform: translateY(-10px);
+}
+
+.servicio-item img {
+  width: 100px; /* Ancho fijo */
+  height: 100px; /* Alto fijo */
+  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionarse */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0px 2px 3px #140505);
+}
+
+.servicio-item h3 {
+  font-size: 1.5rem;
+  color: #6d6d0b;
+  margin-bottom: 10px;
+}
+
+.servicio-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 50px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer p {
+  line-height: 1.6;
+  color: #b5b5b5;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #9a9a11;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.footer-social ul li {
+  list-style: none;
+}
+
+.footer-social ul li a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+.footer-social ul li a img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0px 2px 3px black);
+  /* Sombra suave y difusa */
+}
+
+.footer-social ul li a:hover {
+  background-color: #9a9a11;
+}
+
+/* Sección Mis Proyectos */
+.proyectos {
+  padding: 50px 0;
+  background: linear-gradient(to right, #090a0c, #19232e);
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.proyecto-item {
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.proyecto-item img {
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 2px 3px black);
+}
+
+.proyecto-item h3 {
+  font-size: 1.5rem;
+  color: #9a9a11;
+  margin: 20px;
+}
+
+.proyecto-item p {
+  font-size: 1rem;
+  color: white;
+  margin: 0 20px 20px;
+}
+
+.btn-simple {
+  width: 30%;
+  display: flex;
+  margin: 0 20px 20px;
+  padding: 10px 20px;
+  background-color: #9a9a11;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-simple:hover {
+  background-color: #d4d41e;
+}
+
+/* Sección de Contacto */
+.contacto {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.contact-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-text h3 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: black;
+  outline: none;
+}
+
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6d6d0b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d2d225;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-text,
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+/* Responsividad */
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 50% 50% 1fr;
+    grid-template-columns: repeat(2, 30%);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .servicio-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .servicio-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .sobre-mi-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sobre-mi-text,
+  .sobre-mi-image {
+    max-width: 100%;
+  }
+
+  .sobre-mi-image img {
+    margin-bottom: 20px;
+  }
+}
