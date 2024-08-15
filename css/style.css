@@ -66,6 +66,7 @@ section {
 .sobre-mi {
   padding: 50px 0;
   background-color: #1c1c1c;
+  border-radius: 10px;
 }
 
 .sobre-mi-content {
@@ -170,10 +171,12 @@ section {
 .servicios {
   padding: 50px 0;
   background-color: #1c1c1c;
+  border-radius: 10px;
 }
 
 #tecnologias {
   background: linear-gradient(to right, #090a0c, #29323c);
+  border-radius: 10px;
 }
 
 .container {
@@ -315,6 +318,7 @@ section {
 
 /* Sección Mis Proyectos */
 .proyectos {
+  border-radius: 10px;
   padding: 50px 0;
   background: linear-gradient(to right, #090a0c, #19232e);
 }
@@ -396,7 +400,6 @@ section {
 }
 
 .contact-text p {
-  font-size: 1rem;
   color: #666;
   line-height: 1.8;
   margin-bottom: 20px;
