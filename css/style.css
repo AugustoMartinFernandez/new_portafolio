@@ -337,7 +337,7 @@ section {
 .proyecto-item img {
   width: 100%;
   object-fit: cover;
-  filter: drop-shadow(0px 2px 3px black);
+  filter: drop-shadow(0px 2px 3px #000000);
 }
 
 .proyecto-item h3 {
@@ -371,87 +371,150 @@ section {
 }
 
 /* Sección de Contacto */
+/* Estilos generales para la sección de contacto */
 .contacto {
-  padding: 50px 0;
-  background-color: #f8f9fa;
-}
-
-.contact-content {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact-text {
   flex: 1;
+  margin-right: 30px; /* Espacio entre el texto y el formulario */
   max-width: 500px;
 }
 
-.contact-text h3 {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 15px;
+.contact-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .contact-text p {
   font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
+  color: #666;
+  line-height: 1.8;
   margin-bottom: 20px;
 }
 
-.contact-form {
+/* Estilos para el formulario */
+#form {
   flex: 1;
-  max-width: 500px;
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-.form-group {
+.field {
   margin-bottom: 20px;
 }
 
-.form-group label {
-  display: block;
+.field label {
   font-size: 1rem;
-  margin-bottom: 5px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.form-group input,
-.form-group textarea {
+.field input,
+.field textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   font-size: 1rem;
-  box-sizing: border-box;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: black;
+.field input:focus,
+.field textarea:focus {
+  border-color: #d4d41e;
   outline: none;
 }
 
 .btn-submit {
   display: inline-block;
-  width: 100%;
-  padding: 10px;
-  background-color: #6d6d0b;
-  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #a5a517;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-  background-color: #d2d225;
+  background-color: #d4d41e;
+}
+
+/* Estilo adicional para mejorar el diseño */
+.containerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre el texto y el formulario */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+div:where(.swal2-icon).swal2-question {
+  border-color: #b7b717 !important;
+}
+
+div:where(.swal2-icon) .swal2-icon-content {
+  color: #9a9a11 !important;
+}
+
+div:where(.swal2-container) .swal2-html-container {
+  color: #9a9a11 !important;
+}
+
+div:where(.swal2-container).swal2-center>.swal2-popup {
+  background-color: black !important;
+}
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+  color: #b5b5b5 !important;
+}
+
+.swal2-popup .btn-no {
+  background-color: white !important;
+  color: black !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  background-color: #9a9a11;
+}
+
+div:where(.swal2-icon).swal2-success .swal2-success-ring {
+   border-color: #9a9a11 !important;
 }
 
 /* Responsividad */
