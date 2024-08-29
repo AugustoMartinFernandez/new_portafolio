@@ -28,6 +28,6 @@ setTimeout(function () {
       });
     }
   });
-}, 15000); // 40,000 milisegundos = 40 segundos
+}, 12000); // 12,000 milisegundos = 40 segundos
 
 

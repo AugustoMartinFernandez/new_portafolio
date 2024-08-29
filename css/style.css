@@ -500,16 +500,16 @@ div:where(.swal2-container) .swal2-html-container {
 }
 
 div:where(.swal2-container).swal2-center>.swal2-popup {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 div:where(.swal2-container) h2:where(.swal2-title) {
-  color: #b5b5b5 !important;
+  color: black !important;
 }
 
 .swal2-popup .btn-no {
-  background-color: white !important;
-  color: black !important;
+  background-color: black !important;
+  color: white !important;
 }
 
 div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
